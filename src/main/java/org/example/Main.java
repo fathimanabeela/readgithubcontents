@@ -16,11 +16,15 @@ import java.util.List;
 
 
 
+
 public class Main {
 	public static void main(String[] args) {
-		String username = "fathimanabeela";
-		String repositoryName = "oauth2appinspringboot";
-		String filePath = "src/main/java/com/example/oauth2/controller/HomeController.java";
+
+
+
+		final String username = "fathimanabeela";
+		final String repositoryName = "oauth2appinspringboot";
+		final String filePath = "src/main/java/com/example/oauth2/controller/HomeController.java";
 
 		try {
 			// Create GitHub instance using GitHubBuilder
@@ -79,19 +83,6 @@ public class Main {
 			writer.write(content);
 		}
 
-		try (BufferedReader reader = new BufferedReader(new FileReader(tempFile));
-
-			 FileWriter writer = new FileWriter("newFile.java")) {
-
-			String line;
-			while ((line = reader.readLine()) != null) {
-				writer.write(line);
-				writer.write(System.lineSeparator()); // Add newline character if needed
-			}
-
-			System.out.println("Java file copied successfully.");
-
-		}
 		return tempFile;
 	}
 }
