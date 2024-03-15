@@ -61,7 +61,7 @@ public class Main {
 
 			// Process the file contents
 			checker.process(fileList);
-			
+
 
 		} catch (IOException | CheckstyleException e) {
 			logger.log(Level.SEVERE, "An error occurred", e);
