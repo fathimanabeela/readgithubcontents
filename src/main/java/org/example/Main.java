@@ -1,7 +1,8 @@
 package org.example;
 
 
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import com.puppycrawl.tools.checkstyle.Checker;
 import com.puppycrawl.tools.checkstyle.DefaultConfiguration;
 import com.puppycrawl.tools.checkstyle.api.AuditListener;
@@ -18,6 +19,8 @@ import java.util.List;
 
 
 public class Main {
+
+	private static final Logger logger = Logger.getLogger(Main.class.getName());
 	public static void main(String[] args) {
 
 
@@ -58,13 +61,10 @@ public class Main {
 
 			// Process the file contents
 			checker.process(fileList);
-
-
-			// Clean up temporary file
-			tempFile.delete();
+			
 
 		} catch (IOException | CheckstyleException e) {
-			e.printStackTrace();
+			logger.log(Level.SEVERE, "An error occurred", e);
 		}
 
 	}

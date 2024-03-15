@@ -1,8 +1,5 @@
 
 T
-java:S1874'"2Remove this use of "getContent"; it is deprecated.(§ÞÀ¦þÿÿÿÿ8ß§Ô…ä1
-\	java:S899@";Do something with the "boolean" value returned by "delete".(¼·ážüÿÿÿÿ8â§Ô…ä1
-p
-java:S4042@"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(¼·ážüÿÿÿÿ8â§Ô…ä1
+java:S1874*"2Remove this use of "getContent"; it is deprecated.(§ÞÀ¦þÿÿÿÿ8ß§Ô…ä1
 V
-java:S1874K"4Remove this use of "addAttribute"; it is deprecated.(²Ù¤ëþÿÿÿÿ8ã§Ô…ä1
+java:S1874K"4Remove this use of "addAttribute"; it is deprecated.(²Ù¤ëþÿÿÿÿ8ŸÙõŽä1
